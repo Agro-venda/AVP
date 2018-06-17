@@ -52,7 +52,7 @@ public class PrincipalActivity extends AppCompatActivity {
     private ArrayList<Lista> adicionarLista() {
         ArrayList<Lista> produtor = new ArrayList<Lista>();
 
-        Lista e = new Lista("Agrícula", "Confira", R.drawable.trator);
+        Lista e = new Lista("Agrícola", "Confira", R.drawable.trator);
         produtor.add(e);
 
         e = new Lista("Pecuarista", "Confira", R.drawable.animal);
