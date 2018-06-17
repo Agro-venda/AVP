@@ -3,7 +3,8 @@
     <color name="colorPrimary">#00D1B2</color>
     <color name="colorPrimaryDark">#00D1B2</color>
     <color name="colorAccent">#00D1B2</color>
-
+    <color name="listview">#f9f5f7</color>
+    <color name="diviList">#dcdcdc</color>
     <color name="fundo_Color">#fbfcfc</color>
 
 
