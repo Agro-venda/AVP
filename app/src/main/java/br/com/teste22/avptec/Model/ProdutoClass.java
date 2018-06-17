@@ -11,10 +11,6 @@ public class ProdutoClass {
 
     }
 
-    @Override
-    public String toString() {
-        return "Empresa: "+nome+"\n\n"+"Produto: "+produto+"\n\n"+"Valor: "+valor+"\n\n"+"Fone: "+tel;
-    }
 
 
     public String getUid() {
@@ -56,4 +52,9 @@ public class ProdutoClass {
     public void setTel(String tel) {
         this.tel = tel;
     }
+    @Override
+    public String toString() {
+        return "Empresa: "+nome+"\n\n"+"Produto: "+produto+"\n\n"+"Valor: "+valor+"\n\n"+"Fone: "+tel;
+    }
+
 }

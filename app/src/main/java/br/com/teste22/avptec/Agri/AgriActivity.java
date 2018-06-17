@@ -18,6 +18,7 @@ import br.com.teste22.avptec.ListaAdapter;
 import br.com.teste22.avptec.Pecua.PecuActivity;
 import br.com.teste22.avptec.PrincipalActivity;
 import br.com.teste22.avptec.R;
+import br.com.teste22.avptec.listViews.Fertilizantes;
 
 public class AgriActivity extends AppCompatActivity {
 
@@ -37,6 +38,8 @@ public class AgriActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapter, View view, int posicaoDaLinha, long id) {
 
                 if (posicaoDaLinha == 0) {
+                    Intent chama = new Intent(AgriActivity.this, Fertilizantes.class);
+                    startActivity(chama);
 
                 } else if (posicaoDaLinha == 1) {
 
