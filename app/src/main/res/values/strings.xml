@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AVPTEC</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Agro Vendas</string>
+    <string name="title_home">Agricula</string>
+    <string name="title_dashboard">Pecuaria</string>
+    <string name="title_activity_principal">Agro Vendas</string>
+    <string name="title_activity_agri">Agrícola</string>
+    <string name="title_activity_pecu">Pecuarista</string>
+
+</resources>
