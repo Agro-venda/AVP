@@ -18,7 +18,10 @@ import br.com.teste22.avptec.Lista;
 import br.com.teste22.avptec.ListaAdapter;
 import br.com.teste22.avptec.PrincipalActivity;
 import br.com.teste22.avptec.R;
+import br.com.teste22.avptec.adapters.AdapterProdutos;
+import br.com.teste22.avptec.adapters.ListaProdutos;
 import br.com.teste22.avptec.listViews.Fertilizantes;
+import br.com.teste22.avptec.listViews.Sementes;
 import br.com.teste22.avptec.listViews.Vacinas;
 
 public class PecuActivity extends AppCompatActivity {
@@ -31,7 +34,7 @@ public class PecuActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ListView lista = (ListView) findViewById(R.id.listPecu);
-        ArrayAdapter adapter = new ListaAdapter(this, adicionarLista());
+        ArrayAdapter adapter = new AdapterProdutos(this, adicionarLista());
         lista.setAdapter(adapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -44,12 +47,14 @@ public class PecuActivity extends AppCompatActivity {
 
                 } else if (posicaoDaLinha == 1) {
 
+
                 }
 
             }
 
 
         });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -63,16 +68,16 @@ public class PecuActivity extends AppCompatActivity {
 
 
 
-    private ArrayList<Lista> adicionarLista() {
-        ArrayList<Lista> produtor = new ArrayList<Lista>();
+    private ArrayList<ListaProdutos> adicionarLista() {
+        ArrayList<ListaProdutos> produtor = new ArrayList<ListaProdutos>();
 
-        Lista e = new Lista("Vacinas", "Confira", R.drawable.vacina);
+        ListaProdutos e = new ListaProdutos("Vacinas", "Confira", R.drawable.vacina);
         produtor.add(e);
 
-        e = new Lista("Nutrição", "Confira", R.drawable.nutri);
+        e = new ListaProdutos("Nutrição", "Confira", R.drawable.nutri);
         produtor.add(e);
 
-        e = new Lista("Maquinários", "Confira", R.drawable.maqui);
+        e = new ListaProdutos("Maquinários", "Confira", R.drawable.maqui);
         produtor.add(e);
 
 
