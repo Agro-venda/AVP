@@ -18,6 +18,8 @@ import br.com.teste22.avptec.ListaAdapter;
 import br.com.teste22.avptec.Pecua.PecuActivity;
 import br.com.teste22.avptec.PrincipalActivity;
 import br.com.teste22.avptec.R;
+import br.com.teste22.avptec.adapters.AdapterProdutos;
+import br.com.teste22.avptec.adapters.ListaProdutos;
 import br.com.teste22.avptec.listViews.Fertilizantes;
 import br.com.teste22.avptec.listViews.Sementes;
 
@@ -31,7 +33,7 @@ public class AgriActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ListView lista = (ListView) findViewById(R.id.listAgri);
-        ArrayAdapter adapter = new ListaAdapter(this, adicionarLista());
+        ArrayAdapter adapter = new AdapterProdutos(this, adicionarLista());
         lista.setAdapter(adapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -64,19 +66,19 @@ public class AgriActivity extends AppCompatActivity {
         });
     }
 
-    private ArrayList<Lista> adicionarLista() {
-        ArrayList<Lista> produtor = new ArrayList<Lista>();
+    private ArrayList<ListaProdutos> adicionarLista() {
+        ArrayList<ListaProdutos> produtor = new ArrayList<ListaProdutos>();
 
-        Lista e = new Lista("Fertilizantes", "Confira", R.drawable.ferti);
+        ListaProdutos e = new ListaProdutos("Fertilizantes", "Confira", R.drawable.ferti);
         produtor.add(e);
 
-        e = new Lista("Sementes", "Confira", R.drawable.seme);
+        e = new ListaProdutos("Sementes", "Confira", R.drawable.seme);
         produtor.add(e);
 
-        e = new Lista("Herbicídas", "Confira", R.drawable.herbi);
+        e = new ListaProdutos("Herbicídas", "Confira", R.drawable.herbi);
         produtor.add(e);
 
-        e = new Lista("Perticídas", "Confira", R.drawable.bug);
+        e = new ListaProdutos("Perticídas", "Confira", R.drawable.bug);
         produtor.add(e);
 
         return produtor;

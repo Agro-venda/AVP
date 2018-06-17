@@ -28,7 +28,7 @@ public class Vacinas extends AppCompatActivity {
 
         objetoRef = new Firebase("https://agrovendas-4caed.firebaseio.com/");
 
-        Firebase novaRef = objetoRef.child("vacinas");
+        Firebase novaRef = objetoRef.child("vacina");
 
         final ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, minhaListaDeTarefas);
         minhaLista.setAdapter(adaptador);
