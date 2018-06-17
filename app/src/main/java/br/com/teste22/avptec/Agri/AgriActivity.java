@@ -19,6 +19,7 @@ import br.com.teste22.avptec.Pecua.PecuActivity;
 import br.com.teste22.avptec.PrincipalActivity;
 import br.com.teste22.avptec.R;
 import br.com.teste22.avptec.listViews.Fertilizantes;
+import br.com.teste22.avptec.listViews.Sementes;
 
 public class AgriActivity extends AppCompatActivity {
 
@@ -42,6 +43,8 @@ public class AgriActivity extends AppCompatActivity {
                     startActivity(chama);
 
                 } else if (posicaoDaLinha == 1) {
+                    Intent sementes = new Intent(AgriActivity.this, Sementes.class);
+                    startActivity(sementes);
 
                 }
 

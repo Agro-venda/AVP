@@ -13,10 +13,13 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import br.com.teste22.avptec.Agri.AgriActivity;
 import br.com.teste22.avptec.Lista;
 import br.com.teste22.avptec.ListaAdapter;
 import br.com.teste22.avptec.PrincipalActivity;
 import br.com.teste22.avptec.R;
+import br.com.teste22.avptec.listViews.Fertilizantes;
+import br.com.teste22.avptec.listViews.Vacinas;
 
 public class PecuActivity extends AppCompatActivity {
 
@@ -36,6 +39,8 @@ public class PecuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapter, View view, int posicaoDaLinha, long id) {
 
                 if (posicaoDaLinha == 0) {
+                    Intent vacinas = new Intent(PecuActivity.this, Vacinas.class);
+                    startActivity(vacinas);
 
                 } else if (posicaoDaLinha == 1) {
 
