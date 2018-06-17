@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,19 +7,25 @@
     android:background="@color/diviList"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".PrincipalActivity"
+    tools:layout_editor_absoluteY="81dp"
     tools:showIn="@layout/activity_principal">
 
 
     <ListView
         android:id="@+id/listProdutor"
-        android:layout_width="350dp"
-        android:layout_height="190dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:background="@color/listview"
         android:divider="@color/diviList"
-        android:dividerHeight="5dp" />
+        android:dividerHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

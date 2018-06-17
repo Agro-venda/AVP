@@ -27,6 +27,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="160dp"
         android:background="@android:color/white"
-        android:text="Entrar"
-        android:textColor="@color/colorAccent" />
+        android:text="Entrar" />
 </RelativeLayout>

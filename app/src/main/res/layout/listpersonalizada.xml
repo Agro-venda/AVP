@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteY="81dp">
 
 
     <ImageView
+        android:id="@+id/imagem"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        android:id="@+id/imagem"
         android:scaleType="fitXY"
-        android:layout_margin="5dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
+    <TextView
+        android:id="@+id/endereco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/imagem"
+        app:layout_constraintEnd_toStartOf="@+id/imagem"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
 
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right">
-
-        <TextView
-            android:id="@+id/nome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Titulo"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
-            android:textColorHighlight="@android:color/background_dark"
-            android:textColorHint="@android:color/black" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/endereco"
+        app:layout_constraintEnd_toStartOf="@+id/imagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagem" />
 
 
-        <TextView
-            android:text="Detalhes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:id="@+id/endereco"
-
-            android:textColorHighlight="?attr/actionMenuTextColor"
-            android:textColorHint="@color/colorPrimary"
-            />
-
-
-    </LinearLayout>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
