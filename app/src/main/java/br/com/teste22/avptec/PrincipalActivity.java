@@ -47,7 +47,7 @@ public class PrincipalActivity extends AppCompatActivity {
         });
 
     }
-    a
+    
 
     private ArrayList<Lista> adicionarLista() {
         ArrayList<Lista> produtor = new ArrayList<Lista>();
